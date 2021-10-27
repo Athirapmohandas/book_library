@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <style>
+        body{
+            height: 100vh;
+            background-color: #F4D03F;
+background-image: linear-gradient(132deg, #F4D03F 0%, #16A085 100%);
+
+        }
+        
+        .btn-grad {background-image: linear-gradient(to right, #E55D87 0%, #5FC3E4  51%, #E55D87  100%)}
+         .btn-grad {
+            margin: 5px;
+            padding: 5px 45px;
+            text-align: center;
+            text-transform: uppercase;
+            transition: 0.5s;
+            background-size: 200% auto;
+            color: white;            
+            box-shadow: 0 0 20px #eee;
+            border-radius: 10px;
+            display: block;
+          }
+
+          .btn-grad:hover {
+            background-position: right center; /* change the direction of the change here */
+            color: #fff;
+            text-decoration: none;
+          }
+         
+    </style>
+</head>
+<body>
+    <form onsubmit="event.preventDefault();book.addToDb()">
+    <div class="container">
+        <div class="row">
+             <div class="col-1"></div>  <!--    .col-$*3 -->
+            <div class="col-2"></div>
+            <div class="mb-3 p-2">
+                <h4>BOOK LIBRARY</h4>
+                <input type="text" id="bk_name" placeholder="Enter book name" required="true">
+            </div>
+            <div class="mb-3 p-2">
+                <input type="text" id="bk_author" placeholder="Enter author name">
+            </div>
+            <div class="mb-3 p-2">
+                <input type="text" id="bk_price" placeholder="Enter price">
+            </div>
+            <div class="mb-3 p-2">
+                <input type="text" id="bk_copies" placeholder="Enter No of copies">
+            </div>
+            <div class="mb-3 p-2">
+                <button class="btn-grad" type="submit">Add</button>
+            </div>
+            <div class="col-3"></div>
+        </div>
+    </div>
+</form>
+</body>
+<script src="./script.js"></script>
+</html>

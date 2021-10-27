@@ -16,7 +16,7 @@ class BookLibrary{
         let search_book=document.querySelector("#find").value
          if(search_book in localStorage){
              let data=JSON.parse(localStorage.getItem(search_book))
-           result.innerHTML=`<br><br>Book Name:${data.name},Book author:${data.author},Price:${data.price}, No of copies:${data.copies}`
+           result.innerHTML=`<br><br>Book Name:${data.name}<br> Book author:${data.author}<br> Price:${data.price}<br> No of copies:${data.copies}`
          }
          else{
              alert(" book is not available")
